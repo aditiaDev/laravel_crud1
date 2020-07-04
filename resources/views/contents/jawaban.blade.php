@@ -49,7 +49,7 @@
                     <tbody>
                       @foreach ($data as $item => $row)
                       <tr>
-                        <td style="text-align: right">{{ $row->id }}</td>
+                        <td style="text-align: right">{{ $item+1 }}</td>
                         <td>{{$row->isi}}</td>
                         <td>{{$row->created_date}}</td>
                         <td>{{$row->modified_date}}</td>

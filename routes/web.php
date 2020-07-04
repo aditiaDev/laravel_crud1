@@ -19,6 +19,10 @@ Route::get('/', function () {
 
 Route::get('/pertanyaan', 'PertanyaanController@index');
 Route::post('/pertanyaan', 'PertanyaanController@create');
+Route::get('/pertanyaan/{id}', 'PertanyaanController@show');
+Route::get('/pertanyaan/{id}/getData', 'PertanyaanController@getData_by_id');
+Route::put('/pertanyaan/{id}', 'PertanyaanController@update');
+Route::delete('/pertanyaan/{id}', 'PertanyaanController@delete');
 
 Route::get('/jawaban/{pertanyaan_id}', 'JawabanController@index');
 Route::post('/jawaban/{pertanyaan_id}', 'JawabanController@create');
